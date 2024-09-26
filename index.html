@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonel Profil</title>
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="dark:bg-slate-900 dark:text-gray-200">
+  <!-- header -->
+  <header class="fixed w-full py-4 lg:px-0 px-5 z-[999] duration-300">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
+      <div class="flex gap-4 items-center">
+        <div
+          class="bg-primary text-white rounded-full size-10 text-xl flex-center animate__animated animate__heartBeat animate__infinite">
+          L</div>
+        <div>
+          <h4 class="font-bold text-lg uppercase">Leonel</h4>
+          <p class="text-xs">Profile</p>
+        </div>
+      </div>
+
+      <ul class="md:flex hidden gap-10 hover:*:text-primary *:duration-200">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Apropos de moi</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <span class="theme-switch md:block hidden">
+          <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+        </span>
+      </ul>
+      <div class="flex items-center gap-6">
+        <a href="#Contact">
+          <button class="btn btn-outline md:!flex !hidden">
+            <i class="fa-regular fa-paper-plane"></i>
+            Me contacter
+          </button>
+        </a>
+        <span class="theme-switch md:hidden">
+          <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+        </span>
+        <span id="menubar" class="cursor-pointer md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- backdrop -->
+  <span id="backdrop" class="fixed h-screen bg-black/10 inset-0 backdrop-blur-sm z-[997] hidden"></span>
+
+  <!-- mobile nav -->
+  <ul id="mobile-nav"
+    class="flex-center flex-col gap-10 fixed w-full bottom-0 duration-200 left-0 z-[998] text-xl md:hidden dark:bg-slate-800 bg-primary text-white rounded-t-3xl h-0 overflow-hidden">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Apropos de moi</a></li>
+    <li><a href="#Projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Home -->
+  <section id="home"
+    class="min-h-screen container grid place-items-center relative before:absolute before:top-0 before:bg-heroLight before:size-full before:start-1/2 before:transform before:-translate-x-1/2 before:bg-no-repeat before:-z-[1] before:dark:bg-heroDark">
+    <div class="size-full pt-20 grid md:grid-cols-6 items-center justify-around max-w-6xl">
+      <div class="lg:col-span-2 md:col-span-3 md:text-left text-center sm:pl-2">
+        <div>
+          <h5 class="font-medium text-gray-600 dark:text-gray-200">
+            Bonjour Bienvenue
+          </h5>
+          <h1 class="sm:text-5xl text-4xl !leading-normal dark:text-white relative font-medium">
+            Je suis<span class="text-primary"> Leonel</span><br>Développeur Web
+          </h1>
+          <button class="btn btn-filled mt-5 ">
+            <i class="fa-regular fa-envelope"></i>En apprendre plus</button>
+          <button class="font-semibold dark:text-gray-200 border-b-2 border-gray-700 ml-4">
+            <i class="fa-solid fa-up-right-from-square"></i>Voir mon portofolio
+          </button>
+        </div>
+        <div class="md: w-96 md:ml-auto flex mt-9 gap-2 dark:text-gray-300">
+          <i class="fa-solid fa-border-all mt-0.5 md:inline-block hidden"></i>
+          <p class="text-xs text-balance leading-5 max-w-md px-2 mx-auto">
+            Développeur web passionné par les technologies émergentes, je cherche à utiliser mes compétences en
+            conception et développement de sites web, ainsi qu’en gestion de projets pour contribuer à des projets
+            innovants et améliorer l’efficacité des processus numériques.
+          </p>
+        </div>
+        <div class="flex items-center  md:justify-end justify-center mt-9 gap-6 dark:text-gray-200 text-gray-600">
+          <p class="text-xs">Suivez moi</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/leonel.terry.14?mibextid=ZbWKwL" class="social-icon">
+              <i class="fa-brands fa-facebook"></i>
+
+            </a>
+            <a href="mailto:leonelterry82@gmail.com" class="social-icon">
+              <i class="fa fa-envelope"></i>
+
+            </a>
+            <a href="https://wa.me/22994327708" class="social-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-2 md:col-span-3">
+        <img src="./assets/person.jpg" class="md:w-full max-w-96 md:mt-0 mt-5 w-2/3 mx-auto rounded-full" alt="">
+      </div>
+      <div
+        class="lg:col-span-2 md:col-span-6  lg:bg-gradient-to-l md:bg-none bg-gradient-to-l from-gray-100 dark:from-slate-800 md:mt-0 mt-2 lg:h-96 md:h-auto h-96 ">
+        <ul
+          class="text-2xl leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between data-[slot=count]:*:text-3xl data">
+          <li data-slot="count">8+</li>
+          <li>Languages <span class="text-primary">Expérimenter</span></li>
+
+          <li class="flex-center gap-3"><img src="./assets/html-css.gif" class="size-20 rounded-full" alt=""><img
+              src="./assets/JS.gif" class="size-20 rounded-full" alt=""><img src="./assets/boot.jpg"
+              class="size-20 rounded-full" alt=""><img src="./assets/tail.jpg" class="size-20 rounded-full" alt=""></li>
+          <br>
+          <li class="flex-center gap-3"><img src="./assets/w.jpg" class="size-20 rounded-full" alt=""><img
+              src="./assets/php.png" class="size-20 rounded-full" alt=""><img src="./assets/larael.jpg"
+              class="size-20 rounded-full" alt=""><img src="./assets/react.gif" class="size-20 rounded-full" alt="">
+          </li>
+
+          <li>
+            <button class="btn btn-outline lg:mt-10 md:mt-10 mt-10">
+              <i class="fa-solid fa-download"></i>
+              Télécharger mon CV</button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container min-h-screen flex-center">
+    <div class="">
+      <div class="text-center text-balance">
+        <h3>Compétences et Aptitudes</h3>
+        <p class="px-2 mt-3 text-gray-500">
+          Développeur web passionné par les technologies émergentes, je cherche à utiliser mes compétences en conception
+          et développement de sites web, ainsi qu’en gestion de projets pour contribuer à des projets innovants et
+          améliorer l’efficacité des processus numériques.
+        </p>
+      </div>
+      <div
+        class="max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 *:text-lg *:sm:max-w-full *:max-w-sm hover:*:brightness-90 *:mx-auto *:sm:text-left *:text-center *:hover:cursor-pointer *:shadow-sm mt-10 mx-auto *:rounded-xl *:bg-gray-100 *:dark:bg-slate-800 *:p-7 *:flex *:md:flex-row *:flex-col *:items-center *:gap-12">
+        <div>
+          <div class="*:text-primary">
+            <i class="fa-regular fa-object-ungroup"></i>
+            <h6 class="font-semibold whitespace-nowrap mt-3">
+              Développement Web
+            </h6>
+          </div>
+          <div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance">
+              J'ai acquis des compétences solides en développement web, notamment en HTML, CSS, JavaScript, PHP et
+              MySQL. Je sais concevoir des sites dynamiques, optimiser les performances et assurer une expérience
+              utilisateur fluide. Mon approche axée sur la résolution de problèmes me permet de m'adapter rapidement aux
+              nouvelles technologies et de concevoir des applications évolutives et bien structurées.
+            </p>
+          </div>
+          <i class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"></i>
+        </div>
+        <div>
+          <div class="*:text-primary">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h6 class="font-semibold whitespace-nowrap mt-3">Responsivité</h6>
+          </div>
+          <div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance">
+              Une autre compétence que je mets en avant dans le développement web est la conception responsive. Je
+              m'assure que les sites web que je développe s'adaptent parfaitement à tous les types d'écrans, qu'il
+              s'agisse de smartphones, tablettes ou ordinateurs. En utilisant des techniques comme les media queries et
+              les grilles flexibles, je garantis une expérience utilisateur fluide et cohérente sur tous les appareils,
+              ce qui est essentiel dans un contexte où la navigation mobile est de plus en plus répandue.
+            </p>
+          </div>
+          <i class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"></i>
+        </div>
+        <div>
+          <div class="*:text-primary">
+            <i class="fa-solid fa-people-group"></i>
+            <h6 class="font-semibold whitespace-nowrap mt-3">Teams Play</h6>
+          </div>
+          <div>
+            <p class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance">
+              Le travail en équipe a fortement contribué à mon développement, en m'enseignant l'importance de la
+              collaboration avec divers profils. J'ai renforcé mes compétences en communication et en écoute, tout en
+              apprenant à intégrer les retours de manière constructive. Habitué aux méthodes agiles comme Scrum et
+              Kanban, je m'épanouis dans des environnements où la coordination est essentielle.
+            </p>
+          </div>
+          <i class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container min-h-screen flex-center">
+    <div class="text-center text-balance">
+      <h3>My Projects</h3>
+      <p class="px-2 mt-3 text-gray-500">
+        J'ai réalisé plusieurs projets web allant de sites vitrines à des applications dynamiques. Parmi eux, j'ai
+        développé un site e-commerce avec gestion de base de données, paiement en ligne sécurisé et interface
+        utilisateur intuitive. J'ai également conçu une plateforme de gestion de contenu (CMS) sur mesure, permettant
+        aux utilisateurs de mettre à jour facilement leurs sites sans compétences techniques. Chaque projet a été
+        l'occasion de mettre en œuvre des solutions techniques optimisées tout en garantissant une expérience
+        utilisateur fluide et des performances élevées.
+      </p>
+
+      <br />
+      <div class="flex-center gap-4">
+        <button class="btn btn-filled">Website</button>
+        <button class="btn btn-outline">Mobile App</button>
+        <button class="btn btn-outline">Figma</button>
+      </div>
+      <br />
+      <div
+        class="*:w-full grid mx-auto md:grid-rows-2 md:grid-cols-2 max-w-4xl md:px-0 px-10 *:h-full *:object-cover *:border-4 *:dark:border-white *:rounded-md gap-4 *:cursor-pointer group hover:*:!grayscale-0 *:hover:grayscale *:duration-1000">
+        <img class="" src="./assets/pro1.jpg" alt="" />
+        <img src="./assets/pro3.jpg" class="row-span-2" alt="" />
+        <img src="./assets/pro2.jpg" class="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projet -->
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0"></h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/eigcomp.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">Refonte du site de l'eig</h2>
+          <p class="text-base leading-relaxed mt-2">Fait en tailwind css ce site présente l'école internationale du
+            graphisme et ses formations.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/todo.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">TODO app</h2>
+          <p class="text-base leading-relaxed mt-2">C'est une application de gestionnaire des taches avec les
+            fonctionnalités d'ajouts, de modification et de suppression des taches.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/tdlog.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">Formulaire d'inscription</h2>
+          <p class="text-base leading-relaxed mt-2">Il s'agit là d'un formulaire d'inscription fait en php MySQL.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0"></h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/ajout.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">Ajout au panier</h2>
+          <p class="text-base leading-relaxed mt-2">Un système d'ajout au panier de produit mais pas encore de backend
+            dans le site.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/Carrousel.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">Carrousel</h2>
+          <p class="text-base leading-relaxed mt-2">Cette page présente un carrousel d'image défillant de manière
+            automatique fait avec du HTML, CSS et JavaScript.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./assets/imgprojet/cosmétique.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-white mt-5">Site e-commerce</h2>
+          <p class="text-base leading-relaxed mt-2">Il s'agit d'un site vitrine reproduit en HTML,CSS et JavaScript qui
+            présente des produits de beauté.</p>
+          <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container relative max-w-4xl mx-auto min-h-screen flex-center px-5">
+    <div class="pb-10">
+      <div class="text-center">
+        <h3>Contact Me</h3>
+        <p class="px-2 mt-3 text-gray-500">
+          Je suis actuellement à la recherche d'un stage académique pour approfondir mes compétences en développement
+          web et mettre en pratique mes connaissances dans un environnement professionnel. Motivé, rigoureux et
+          passionné par la technologie, je suis prêt à m'investir pleinement pour contribuer à des projets concrets tout
+          en apprenant auprès d'une équipe expérimentée. Si vous recherchez un stagiaire dynamique, capable de s'adapter
+          rapidement et de relever des défis techniques, n'hésitez pas à me contacter. Je serais ravi de discuter des
+          opportunités et de voir comment je peux apporter de la valeur à votre équipe.
+        </p>
+      </div>
+      <div class="mt-12 md:relative flex flex-col gap-5 sm:max-w-full mx-auto max-w-xs">
+        <div
+          class="dark:bg-slate-800 bg-slate-50 dark:text-gray-100 text-gray-800 rounded-lg shadow-xl mx-auto md:w-2/3 py-14 px-7 w-full">
+          <h3 class="font-semibold text-3xl">
+            Send Me A <br /><span class="text-primary">Message</span>
+          </h3>
+          <br>
+          <img src="./assets/contact.jpg" alt="">
+        </div>
+        <div
+          class="dark:bg-gray-700 bg-white py-12 px-7 md:absolute lg:-right-9 right-28 rounded-xl shadow-xl md:w-2/5 h-5/6 top-28 w-full mx-auto">
+          <h3 class="font-semibold text-2xl border-b pb-4 border-gray-600">
+            Me<br />Contacter <span class="text-primary">.</span>
+          </h3>
+          <div class="py-4">
+            <p class="text-xs text-gray-400 leading-5">
+              Vous avez besoin d'un dévelloppeur web pour la conception de vos site internet?<br /><span
+                class="text-primary">Contacter moi</span>
+            </p>
+            <ul class="*:flex *:gap-4 *:items-center *:mt-4">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h2>Bénin</h2>
+                  <address class="text-xs">Cotonou</address>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>leonelterry82@gmail.com</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+229 94 32 77 08 / +229 62 10 11 53 / +229 40 74 63 41</p>
+              </li>
+            </ul>
+            <div class="flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9">
+              <p class="text-xs">Suivez moi</p>
+              <div class="flex gap-3">
+                <a href="https://www.facebook.com/leonel.terry.14?mibextid=ZbWKwL" class="social-icon">
+                  <i class="fa-brands fa-facebook"></i>
+
+                </a>
+                <a href="mailto:leonelterry82@gmail.com" class="social-icon">
+                  <i class="fa fa-envelope"></i>
+
+                </a>
+                <a href="https://wa.me/22994327708" class="social-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-slate-700 bg-slate-100 text-center py-2">
+    Copyright &copy; 2024
+    <ul class="flex-center gap-5 py-4 text-sm">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li><a href="#">Projects</a></li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
+  <!-- sticky nav script -->
+  <script>
+    const header = document.querySelector("header");
+
+    const toggleClasses = (element, classes, condition) => {
+      classes.forEach((className) => {
+        element.classList.toggle(className, condition);
+      })
+    }
+    window.addEventListener("scroll", () => {
+      toggleClasses(
+        header,
+        [
+          "bg-white",
+          "dark:text-white",
+          "dark:bg-slate-800",
+          "shadow-lg",
+          "dark:sm:bg-slate-900"
+        ],
+        window.scrollY > 0
+      );
+    }
+    );
+  </script>
+</body>
+
+</html>
